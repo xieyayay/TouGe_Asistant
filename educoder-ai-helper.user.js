@@ -1,9 +1,12 @@
 // ==UserScript==
 // @name         Helper
+// @name:zh-CN   Helper
 // @namespace    https://www.educoder.net/
-// @version      1.8.4
+// @version      1.8.5
 // @description  在头歌任务页注入可视化面板：抓取题面和编辑器代码，调用你自己的 OpenAI 兼容 API 生成可提交答案。
-// @author       local
+// @description:zh-CN  在头歌任务页注入可视化面板：抓取题面和编辑器代码，调用你自己的 OpenAI 兼容 API 生成可提交答案。
+// @author       xieyayaya
+// @license      MIT
 // @match        https://www.educoder.net/tasks/*
 // @match        https://educoder.net/tasks/*
 // @grant        GM_xmlhttpRequest
@@ -26,7 +29,7 @@
   const STORAGE_KEY = 'educoder_ai_helper_settings_v1';
   const MAX_TASK_CHARS = 30000;
   // 与 @version 保持一致，用于识别页面上是否残留旧版实例
-  const SCRIPT_VERSION = '1.8.4';
+  const SCRIPT_VERSION = '1.8.5';
 
   const DEFAULTS = {
     preset: 'deepseek',
